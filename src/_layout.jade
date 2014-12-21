@@ -1,3 +1,4 @@
+include _vendor/bemto
 -var V = process.env.V || Date.now();
 doctype
 html
@@ -19,6 +20,7 @@ html
     script(src='/javascripts/application.js?v='+V)
     link(rel="stylesheet" href="/build/main.css?v="+V)
   body
-    != yield
+    +b.layout 
+      != yield
     != partial("_instantclick")
     != partial("_footer")

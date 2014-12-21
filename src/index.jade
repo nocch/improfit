@@ -1,2 +1,126 @@
 include _vendor/bemto
-h1 Hello, world!
+
++b.header
+  +b.slogan
+    | Покупка и продажа действующего <br>
+    | бизнеса  в Москве
+  +b('a').logo(href='/')
+  +b.big-phone
+    +e.callback
+      | Заказать звонок
+
++b.selection-and-navigation
+  +b.top-menu
+    +e('a').itm_active(href='#')
+      | Главная
+    +e('a').itm(href='#')
+      | Покупателю бизнеса
+    +e.submenu
+      +e('a').submenu-itm(href='#')
+        | Как происходит продажа
+      +e('a').submenu-itm(href='#')
+        | Как происходит откат
+      +e('a').submenu-itm(href='#')
+        | Как происходит заем
+      +e('a').submenu-itm(href='#')
+        | Как происходит кредит
+    +e('a').itm(href='#')
+      | Собственнику бизнеса
+    +e('a').itm(href='#')
+      | База знаний
+  +b.filtering
+    //вертикальная черта
+    +b.vilter-vhr
+    +b.filter-slider_prise
+      +e('label').from
+        | Цена от
+        +e('input').value(value='800 000')
+      +e('label').to
+        | До
+        +e('input').value(value='5 612 000р')
+      // пока просто габаритный прямоугольник
+      +e.slider
+
+  +b.filter-slider_profit
+    +e('label').form
+      | Прибыль от
+      +e('input').value(value='800000р')
+      | До
+      +e('input').value(value='5 612 000р')
+    // Пока просто габаритный прямоугольник
+    +e.slider
+  +b.filter-age
+    +e('label').label
+      | Возраст бизнеса
+      select
+        option неважно
+        option старый
+        option молодой
+  //можно не стилизовать
+  +b.filter-checkbox
+    +e('label')
+      | Интернет магазин
+      input(type='checkbox')
+    
+    +e('label')
+      | Интернет магазин
+      input(type='checkbox')
+        
+
+
+    +e('label')
+      | Интернет магазин
+      input(type='checkbox')
+    +e('label')
+      | Интернет магазин
+      input(type='checkbox')
+    +e('label')
+      | Интернет магазин
+      input(type='checkbox')
+  +b.filter-search
+    | Найти
+  +b.filter-count
+    | 13 объектов
+
++b.results
+  //Габаритный макет
+  +b.map
+  +b.sort-pane
+    +e.by-price
+      |Цена
+    +e.by-profit_active_asc
+      | Прибыль
+  +b.itm-list
+    each itm in ['магазин', 'вебстудия', 'блогер']
+      +b.itm
+        +e.title= itm
+        +e.price 2 500 000 р
+        +e('img').img(src='#')
+        +e.badges
+          +e.badge.badge-gt2
+            +e.badge-img
+            +e.badge-text Более 2 лет на рынке
+          +e.badge.badge-uniseason
+            +e.badge-text несезонный
+          +e.badge.badge-money
+            +e.badge-img
+            +e.badge-text Дорогие активы
+
+  +b.paginator
+    +e('a').i_active(href='#') 1
+    +e('a').i(href='#') 2
+    +e('a').i(href='#') 3
+    +e('a').i(href='#') 4
+    +e.dot
+    +e('a').i_last(href='#') 12
+
++b.footer
+  +e.address
+    +e.prefix Адрес:
+    +e.value 101000, г. Москва, ул. Малая Лубянка, дом 16
+  +e.address
+    +e.prefix email:
+    +e.email-ico
+    +e('a').value(href='mailto:......@.....') mail@ololo.ru
+  +e('a').callback(href='#')
+    | Обратный звонок
