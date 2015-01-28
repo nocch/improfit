@@ -1,0 +1,127 @@
+/*
+ * Retina helper mixins for Compass
+ * http://www.joelambert.co.uk
+ *
+ * Copyright 2012, Joe Lambert.
+ * Free to use under the MIT license.
+ * http://joelambert.mit-license.org/
+ */
+/* line 4, ../_sass/main.sass */
+.layout {
+  width: 1000px;
+  left: 50%;
+  position: relative;
+  margin-left: -500px;
+}
+
+/* line 13, ../_sass/main.sass */
+.layout .header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* line 18, ../_sass/main.sass */
+.header .logo {
+  position: absolute;
+  top: -6px;
+  left: 400px;
+}
+/* line 22, ../_sass/main.sass */
+.header .big-phone {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+/* line 28, ../_sass/main.sass */
+.layout .selection-and-navigation {
+  margin-bottom: 30px;
+}
+
+/* line 31, ../_sass/main.sass */
+.selection-and-navigation {
+  position: relative;
+}
+/* line 33, ../_sass/main.sass */
+.selection-and-navigation .top-menu {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+/* line 38, ../_sass/main.sass */
+.selection-and-navigation .filtering {
+  position: absolute;
+  top: 50px;
+}
+/* line 41, ../_sass/main.sass */
+.selection-and-navigation .filter-slider {
+  position: absolute;
+  top: 80px;
+}
+/* line 44, ../_sass/main.sass */
+.selection-and-navigation .filter-age {
+  position: absolute;
+  top: 170px;
+}
+/* line 47, ../_sass/main.sass */
+.selection-and-navigation .filter-checkbox {
+  position: absolute;
+  top: 50px;
+  left: 600px;
+}
+/* line 51, ../_sass/main.sass */
+.selection-and-navigation .filter-checkbox label {
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 57, ../_sass/main.sass */
+.header {
+  height: 50px;
+  font-size: 14px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+}
+
+/* line 63, ../_sass/main.sass */
+.logo {
+  width: 203px;
+  height: 51px;
+  background: url(images/logo.gif);
+}
+
+/* line 68, ../_sass/main.sass */
+.big-phone {
+  color: #505050;
+  border-bottom: 1px dashed #505050;
+  cursor: pointer;
+}
+/* line 72, ../_sass/main.sass */
+.big-phone__callback {
+  color: red;
+}
+
+/* line 74, ../_sass/main.sass */
+.selection-and-navigation {
+  width: 1000px;
+  height: 338px;
+  background: url(images/grey-bg.jpg);
+  border-top: 2px solid #505050;
+}
+
+/* line 80, ../_sass/main.sass */
+.top-menu__itm {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: -1px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* line 89, ../_sass/main.sass */
+.filtering {
+  width: 700px;
+  height: 300px;
+}
